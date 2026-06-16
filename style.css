@@ -33,11 +33,26 @@ body {
   margin-bottom: 18px;
 }
 
-.hero h1 {
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   margin: 0;
   font-size: 42px;
   font-weight: 800;
   letter-spacing: -0.04em;
+}
+
+.hero-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  margin: 0;
 }
 
 .hero p {
@@ -224,10 +239,51 @@ body {
 }
 
 .footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.footer-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 30px 24px;
   text-align: center;
-  padding: 28px 20px 44px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+}
+
+.footer-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.footer-desc {
+  margin: 0 0 20px;
+  font-size: 15px;
   color: #6b7280;
-  font-size: 14px;
+}
+
+.footer-kakao-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: #fee500;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-kakao-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
 }
 
 @media (max-width: 768px) {
@@ -262,6 +318,50 @@ body {
   }
 
   .faq-answer {
-    padding: 0 18px 20px;
-  }
+  display: none;
+  padding: 0 22px 22px;
+  color: #4b5563;
+  font-size: 15px;
+  white-space: pre-line;
+}
+}
+
+.kakao-link {
+  color: #0f9da3;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.kakao-link:hover {
+  text-decoration: underline;
+
+}
+
+.db-link,
+.db-link:visited,
+.db-link:active,
+.db-link:focus {
+  color: #0f9da3;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.db-link:hover {
+  text-decoration: underline;
+}
+
+.plus-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #1677ff;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 2px;
 }
